@@ -57,7 +57,8 @@ Template.TEMPLATE_NAME.helpers({
 
 	"jsonEditorOptions": function() {
 		return {
-			lineNumbers: false
+			lineNumbers: false,
+			readOnly: true
 		}
 	}
 });
