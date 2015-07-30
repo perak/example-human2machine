@@ -1,0 +1,11 @@
+<template name="TEMPLATE_NAME">
+	<div class="row row-editor">
+		<div class="col-md-6">
+			{{> CodeMirror id="human-editor" options=humanEditorOptions reactiveVar="humanEditorText"}}
+		</div>
+
+		<div class="col-md-6 full-height">
+			{{> CodeMirror id="json-editor" options=jsonEditorOptions reactiveVar="jsonEditorText"}}
+		</div>
+	</div>
+</template>

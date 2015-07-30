@@ -1,0 +1,52 @@
+{
+	"application": {
+		"title": "human2machine",
+		"theme": "bootswatch-superhero",
+
+		"footer_text": "<a href=\"https://www.npmjs.com/package/human2machine\" target=\"_blank\">human2machine</a> converter built with (and for) <a href=\"http://www.meteorkitchen.com\" target=\"_blank\">Meteor Kitchen</a> - code generator for Meteor.js",
+
+		"free_zone": {
+			"container_class": "container-fluid",
+			"pages": [
+				{
+					"name": "home",
+
+					"components": [
+
+						{
+							"name": "editor",
+							"type": "custom",
+							"custom_template": "files/editor"
+						}
+
+					]
+				},
+				{
+					"name": "help",
+					"title": "Help",
+					"text": "Under construction"
+				}
+			],
+
+			"components": [
+				{
+					"name": "main_menu",
+					"type": "menu",
+					"class": "nav navbar-nav",
+					"items": [
+						{ "title": "Home", "route": "home", "icon_class": "fa fa-home" },
+						{ "title": "Help", "route": "help", "icon_class": "fa fa-help" }
+					]
+				}
+			]
+		},
+
+		"packages": {
+			"meteor": [ "perak:codemirror", "perak:human2machine" ]
+		},
+
+		"copy_files": [
+			{ "source": "files/styles.less", "dest": "CLIENT_STYLES_DIR/styles.less" }
+		]
+	}
+}
